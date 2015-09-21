@@ -9,3 +9,4 @@ insecure
 kadira:flow-router
 kadira:blaze-layout
 reactive-var
+kadira:blaze-plus

@@ -1,0 +1,29 @@
+<template name="layout">
+  {{> navigation }}
+  <hr>
+  {{>$ template=main slug=prop$slug }}
+</template>
+
+<template name="post">
+  <h3>Post Content</h3>
+  {{#if $loaded}}
+    {{#if $post}}
+      <span>Post Title</span>: {{$post.title}}
+    {{else}}
+      Not Found
+    {{/if}}
+  {{else}}
+    Loading...
+  {{/if}}
+</template>
+
+<template name="home">
+  <div>Home</div>
+</template>
+
+<template name="navigation">
+  <a href="/">Home</a> | 
+  <a href="/post/post-1">Post 1</a> | 
+  <a href="/post/post-2">Post 2</a> | 
+  <a href="/post/post-3">Post 3</a> | 
+</template>
